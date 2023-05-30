@@ -29,7 +29,7 @@ def caverphone2(input : str) -> str :
         "enough","enou2f","trough","trou2f","gn","2n"
     ]
     for idx,itm in enumerate(ough_gn_replace) :
-        if (idx % 2 == 0 and input.startswith(ough_gn_replace[idx-1])) :
+        if (idx % 2 == 1 and input.startswith(ough_gn_replace[idx-1])) :
             input = ough_gn_replace[idx] + input.lstrip(ough_gn_replace[idx-1])
             break
 
